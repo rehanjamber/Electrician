@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehan Jamber Electrician | 24/7 Electrical Services in Islamabad</title>
+    <meta name="description" content="Trusted local electrician in Islamabad & Rawalpindi. 24/7 emergency service, UPS/Solar installation, residential & commercial wiring. Call now!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',    // Deep Navy
+                            blue: '#1e3a8a',    // Professional Blue
+                            yellow: '#eab308',  // Safety Yellow
+                            yellowHover: '#ca8a04',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for subtle animations and background */
+        .hero-pattern {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1622021432104-5f560e290f65?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-brand-light antialiased selection:bg-brand-yellow selection:text-brand-navy">
+
+    <!-- 1. Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="fa-solid fa-bolt text-brand-yellow text-3xl"></i>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-xl md:text-2xl text-brand-navy leading-none">REHAN JAMBER</span>
+                        <span class="text-sm font-semibold text-brand-blue tracking-widest uppercase">Electrician</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center font-medium">
+                    <a href="#home" class="text-slate-600 hover:text-brand-yellow transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-brand-yellow transition-colors">About</a>
+                    <a href="#services" class="text-slate-600 hover:text-brand-yellow transition-colors">Services</a>
+                    <a href="#portfolio" class="text-slate-600 hover:text-brand-yellow transition-colors">Portfolio</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-brand-yellow transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-slate-600 hover:text-brand-yellow transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="tel:+923339428712" class="hidden sm:flex items-center gap-2 bg-brand-yellow hover:bg-brand-yellowHover text-brand-navy px-5 py-2.5 rounded-md font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone-volume animate-pulse"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-brand-navy text-2xl focus:outline-none p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 shadow-xl absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-2 font-medium flex flex-col">
+                <a href="#home" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">About</a>
+                <a href="#services" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">Services</a>
+                <a href="#portfolio" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">Portfolio</a>
+                <a href="#testimonials" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">Testimonials</a>
+                <a href="#contact" class="block px-3 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-yellow rounded-md">Contact</a>
+                <a href="tel:+923339428712" class="mt-4 flex justify-center items-center gap-2 bg-brand-yellow text-brand-navy px-4 py-3 rounded-md font-bold w-full">
+                    <i class="fa-solid fa-phone"></i> +92 333 9428712
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-pattern min-h-[90vh] flex items-center pt-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
+            <div class="max-w-3xl text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-yellow/20 border border-brand-yellow/50 text-brand-yellow mb-6">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span class="text-sm font-bold tracking-wide">ISLAMABAD & RAWALPINDI'S PREMIER ELECTRICIAN</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Fast, Reliable & Safe <br class="hidden md:block">
+                    <span class="text-brand-yellow">Electrical Services</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                    From 24/7 emergency faults to complete home wiring, our certified experts deliver high-quality, guaranteed solutions for your home or business.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-brand-yellow hover:bg-brand-yellowHover text-brand-navy text-lg font-bold py-4 px-8 rounded-lg shadow-lg shadow-brand-yellow/20 transition-all text-center">
+                        Request a Free Quote
+                    </a>
+                    <a href="tel:+923034717372" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-navy text-white text-lg font-bold py-4 px-8 rounded-lg transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> +92 303 4717372
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-700/50">
+                    <div class="flex items-center gap-3 text-white justify-center md:justify-start">
+                        <i class="fa-solid fa-medal text-brand-yellow text-3xl"></i>
+                        <div class="text-left">
+                            <p class="font-bold text-lg">9+ Years</p>
+                            <p class="text-sm text-slate-400">Experience</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-white justify-center md:justify-start">
+                        <i class="fa-solid fa-thumbs-up text-brand-yellow text-3xl"></i>
+                        <div class="text-left">
+                            <p class="font-bold text-lg">100% Guaranteed</p>
+                            <p class="text-sm text-slate-400">Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-white justify-center md:justify-start">
+                        <i class="fa-solid fa-clock text-brand-yellow text-3xl"></i>
+                        <div class="text-left">
+                            <p class="font-bold text-lg">24/7 Service</p>
+                            <p class="text-sm text-slate-400">Emergency Response</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Us -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 relative">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIIK245YWLa35oKRk1lj69U0hAr4MXyknOieptOAteKH92kxq99W4K8o-MlR0m-wKr6TSU5vBAHeJkrOXwcRC26hj3yAy5bbp4fIhj7w3E3hA3b36xeHWTzkNcFmHZYzC-bIuv1hj9BFGqbl9cJ4z_xTKycobY7NVTH8lBeRUN4y0noQKA2eyzYX1dqWk/s1344/Whisk_9454db9fc6df4478fd24b4e74bce8f5ddr.png?w=800&q=80" alt="Professional Electrician at work" class="rounded-lg shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -right-6 bg-brand-yellow text-brand-navy p-6 rounded-lg shadow-xl z-20 hidden md:block border-4 border-white">
+                        <p class="text-4xl font-extrabold">9+</p>
+                        <p class="font-bold text-sm uppercase tracking-wide">Years Serving<br>Islamabad</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h4 class="text-brand-blue font-bold tracking-wider uppercase mb-2">About Us</h4>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-6">Your Trusted Local Electrician in the Twin Cities</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        When the lights go out, the UPS fails, or you're building a new home, you need a professional who understands the unique electrical demands of our region. At <strong>Rehan Jamber Electrician</strong>, we bring expertise, safety, and reliability directly to your doorstep.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        We are fully equipped and ready to serve major residential and commercial sectors across Islamabad and Rawalpindi, including <span class="font-semibold text-brand-navy">F-Series, G-Series, DHA, Bahria Town, PWD, and Soan Garden</span>. Whether it's late-night short circuits or complex solar wiring, we fix it right the first time.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-slate-700 font-medium"><i class="fa-solid fa-circle-check text-brand-yellow text-xl"></i> Rapid Response Time</li>
+                        <li class="flex items-center gap-3 text-slate-700 font-medium"><i class="fa-solid fa-circle-check text-brand-yellow text-xl"></i> Upfront, Transparent Pricing</li>
+                        <li class="flex items-center gap-3 text-slate-700 font-medium"><i class="fa-solid fa-circle-check text-brand-yellow text-xl"></i> Certified & Licensed Experts</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-blue text-white py-3 px-6 rounded-md font-bold transition-colors">
+                        Discover Our Services <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Offered -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-blue font-bold tracking-wider uppercase mb-2">Our Expertise</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-4">Comprehensive Electrical Solutions</h2>
+                <p class="text-slate-600 text-lg">Professional, code-compliant electrical services tailored for homes and businesses in Islamabad and Rawalpindi.</p>
+            </div>
+
+            <!-- Top Core Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Residential Wiring & Repair</h3>
+                    <p class="text-slate-600">Complete home wiring, fault finding, breaker upgrades, and general repairs to keep your family safe.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Commercial Setup</h3>
+                    <p class="text-slate-600">Heavy-duty commercial wiring, panel upgrades, office lighting, and dedicated server room circuits.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">UPS & Inverter Setup</h3>
+                    <p class="text-slate-600">Crucial for load-shedding. Expert installation, battery backup wiring, and maintenance for continuous power.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Solar Panel Wiring</h3>
+                    <p class="text-slate-600">Efficient solar inverter connections, grid-tie setups, and safe wiring maintenance for green energy.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">Generator ATS Installation</h3>
+                    <p class="text-slate-600">Automatic Transfer Switch (ATS) installations for seamless transitions between WAPDA and generator power.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-brand-yellow group">
+                    <div class="w-14 h-14 bg-slate-100 rounded-lg flex items-center justify-center text-brand-blue text-3xl mb-6 group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">AC & Dedicated Circuits</h3>
+                    <p class="text-slate-600">Heavy-draw appliance wiring, dedicated AC breaker installations, and robust grounding setups.</p>
+                </div>
+            </div>
+
+            <!-- Detailed Services Breakdown -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-brand-navy mb-8 text-center border-b pb-4">Detailed Technical Services</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                    <!-- Column 1 -->
+                    <div>
+                        <div class="mb-8">
+                            <h4 class="flex items-center gap-3 text-xl font-bold text-brand-blue mb-4">
+                                <i class="fa-solid fa-bolt text-brand-yellow"></i> Installation & Upgrades
+                            </h4>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li><strong class="text-slate-800">Wiring & Rewiring:</strong> Whole-home wiring, room additions, and replacing outdated, unsafe aluminum wiring.</li>
+                                <li><strong class="text-slate-800">Electrical Panels:</strong> Main breaker panel upgrades (e.g., 200-amp service), sub-panels, and fuse box replacement.</li>
+                                <li><strong class="text-slate-800">Lighting Systems:</strong> Indoor (recessed, chandeliers), outdoor landscape, and security/motion-sensor lighting.</li>
+                                <li><strong class="text-slate-800">Outlets & Switches:</strong> GFCI/AFCI safety outlets, dimmers, 240V heavy appliance outlets, and USB/smart outlets.</li>
+                                <li><strong class="text-slate-800">Smart Home Tech:</strong> Smart thermostats, lighting relays, doorbell cameras, and automation hubs.</li>
+                                <li><strong class="text-slate-800">Surge Protection:</strong> Whole-house surge protectors wired directly at the main panel.</li>
+                                <li><strong class="text-slate-800">EV Chargers:</strong> Level 2 electric vehicle charging stations for garages or driveways.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="flex items-center gap-3 text-xl font-bold text-brand-blue mb-4">
+                                <i class="fa-solid fa-wrench text-brand-yellow"></i> Repair & Maintenance
+                            </h4>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li><strong class="text-slate-800">Troubleshooting:</strong> Diagnosing flickering lights, dead outlets, buzzing switches, and tripping breakers.</li>
+                                <li><strong class="text-slate-800">Safety Inspections:</strong> Code compliance, home buyer evaluations, and safety audits.</li>
+                                <li><strong class="text-slate-800">Short Circuits:</strong> Immediate fault finding and repair for short circuits to prevent fire hazards.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div>
+                        <div class="mb-8">
+                            <h4 class="flex items-center gap-3 text-xl font-bold text-brand-blue mb-4">
+                                <i class="fa-solid fa-plug-circle-check text-brand-yellow"></i> Specialty Appliance Hookups
+                            </h4>
+                            <p class="text-sm text-slate-500 mb-3 italic">Providing safe, high-voltage power sources even when other trades are involved.</p>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li><strong class="text-slate-800">Electric Water Heaters:</strong> Heavy-duty 240V circuits and disconnects for traditional and tankless units.</li>
+                                <li><strong class="text-slate-800">Water Pumps:</strong> Wiring for sump pumps, ejector pumps, and integration with battery backups.</li>
+                                <li><strong class="text-slate-800">Kitchen Appliances:</strong> Dedicated circuits for heavy ovens, microwaves, garbage disposals, and dishwashers.</li>
+                                <li><strong class="text-slate-800">Outdoor Leisure:</strong> Code-compliant circuits for hot tubs, spas, and pools (GFCI protection, equipment bonding).</li>
+                                <li><strong class="text-slate-800">HVAC Support:</strong> Heavy electrical disconnects, whips, and hookups for furnaces, heat pumps, and AC compressors.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                            <h4 class="flex items-center gap-3 text-xl font-bold text-red-700 mb-3">
+                                <i class="fa-solid fa-triangle-exclamation animate-bounce"></i> 24/7 Emergency Services
+                            </h4>
+                            <p class="text-sm text-red-900 mb-2 font-medium">Immediate response for severe fire and shock hazards:</p>
+                            <ul class="space-y-2 text-sm text-red-800 list-disc pl-5">
+                                <li>Burning smells from outlets, switches, or panels.</li>
+                                <li>Sparking, smoking, or visibly damaged components.</li>
+                                <li>Sudden total power loss (non-WAPDA outage).</li>
+                                <li>Repeatedly tripping main breakers.</li>
+                                <li>Storm damage to exterior weatherheads or meters.</li>
+                            </ul>
+                            <a href="tel:+923339428712" class="mt-4 inline-block font-bold text-red-700 hover:text-red-900 underline">Call Emergency Line Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portfolio / Recent Work -->
+    <section id="portfolio" class="py-20 bg-brand-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-yellow font-bold tracking-wider uppercase mb-2">Our Gallery</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Our Recent Projects in Islamabad</h2>
+                <p class="text-slate-400 text-lg">A glimpse into the high-quality craftsmanship we deliver daily.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7eCyKDUbtR3a_U_PKQAGuW15Ltya4mIPmcCQL97AytOC8HdS10Kop3WnaSEXU2CIsNdkKiMAOz7y2QxCNVQzlMV_OS58iARNeSNIZe6rCrPj_xNOan68JI6uORKt6m5B18M_ff3h2_qpKYvbQ71ym9mwrjVjvkjxdEXSIBYMcU_EZroBgXD-8nwX3e8A/s866/Untitled-design-10-1.jpg?w=800&q=80" alt="Electrical Maintenance" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Complete House Electrical Maintenance in ISLAMABAD AND RAWALPINDI</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgz-lT6weNsFCxmAUWDlvjIwSyR9iglItwAIDPrXp4Erca3MNjc7_WTcIvOD6fIcaldWKfQIiBfXj-zwWw8VvqwBR5Ckb3H615FWjy4IaMGkhPYqg31Fyw72J3ueq5m9tsAaEImNvg9Uhws0VO144IkP3oFWW-_qCeq3Q0RDP_61ytdtPCHdVuEWUokTAc?w=800&q=80" alt="Commercial Lighting" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Commercial Lighting Setup in ISLAMABAD AND RAWALPINDI</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEieajiZXHq7RzO5Cf_dv7p2YbdJlK8LV7AXUjvg-Tp0i1exxaZH_9vokeOPqSiqaxXktn5PdGS3ylP9aWOl5-VgRrZmRDc-T_yzIneCVf-x6oZDHmx7CqP6FKdQaQI-lA0gUZHVhx4jWtoWjnOhGRUxkdQ6Ce1RNeUvKuoF2tytUQcuGIop_-4NTnErARQ?w=800&q=80" alt="Main Breaker Panel Upgrade" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Main Breaker Panel Upgrade in DHA Phase 2</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgG0Zxt50055D6BN_haITb62PD4rVDWPWALzANSsOfQBbYItiTxDtLFelNC6FFv3EUZCcAl8FeShBhFCOrqC3rfiPrdb_yVKlPgkL23MU-8NMAUlWO6PZeMM1vd27ayVNy26VnMQu7JdP-Lsc9jf0EYhd1asmKi9KDMNNpfDlj9Ak8w_nygMXIc-GPRuEQ?w=800&q=80" alt="Solar & UPS Integration" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Solar & Hybrid Inverter Integration in Bahria Town</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgqFykHz6K31XRDsK66X30lxLOtReNNqlX31nTs0GMsg3HgDM3BuksgiBNshYAKAf_rBK5JDp5z5vo7gKdYSsHYj7wMBnnCbBjjiOYjNLFUVHp0ho1aepMyynN-5BQ4jVBGAeH-28EZIdXRvRBRtPxxfvaHeqj1j-kWyFhKfLufGW15VzAvPVlpqX72yN8?w=800&q=80" alt="Emergency Wiring Repair" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Emergency Short-Circuit Repair in F-11 Sector</p>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhSgo86AoDcwsQQRQ3kPmkJa3V7IQ_vu0n03RskM6f9Lt6NNNj5KnLC7mgyiqcts6uglvasKf8qR0e7rpJX9rNr--cXtsT8eM2SrFd522xIvs9lAdHr_Bo7h7EPcShCDkxJrS2PfrjZr1jNz82-GOt2mFK3uxTnuOgU3f0Y9U9qqQUf9Wu366gj67kck70?w=800&q=80" alt="Smart Home Automation Wiring" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <p class="text-white font-semibold text-lg leading-snug">Smart Home Network & Power Wiring in G-13</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Why Choose Us (USPs) -->
+    <section class="py-16 bg-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center text-brand-navy">
+                    <i class="fa-solid fa-stopwatch text-5xl mb-4"></i>
+                    <h3 class="text-xl font-extrabold mb-2">Fast Response Time</h3>
+                    <p class="font-medium">Under 30 mins arrival in Islamabad sectors for emergencies.</p>
+                </div>
+                <div class="text-center text-brand-navy">
+                    <i class="fa-solid fa-file-invoice-dollar text-5xl mb-4"></i>
+                    <h3 class="text-xl font-extrabold mb-2">Transparent Pricing</h3>
+                    <p class="font-medium">No hidden charges. Clear estimates before any work begins.</p>
+                </div>
+                <div class="text-center text-brand-navy">
+                    <i class="fa-solid fa-user-shield text-5xl mb-4"></i>
+                    <h3 class="text-xl font-extrabold mb-2">Licensed & Certified</h3>
+                    <p class="font-medium">Highly trained professionals adhering to strict safety codes.</p>
+                </div>
+                <div class="text-center text-brand-navy">
+                    <i class="fa-solid fa-toolbox text-5xl mb-4"></i>
+                    <h3 class="text-xl font-extrabold mb-2">Premium Materials</h3>
+                    <p class="font-medium">We exclusively use top brands like Pakistan Cables & Fast Cables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Customer Testimonials -->
+    <section id="testimonials" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-blue font-bold tracking-wider uppercase mb-2">Testimonials</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-4">What Our Clients Say</h2>
+                <p class="text-slate-600 text-lg">Trusted by hundreds of homeowners and businesses across the Twin Cities.</p>
+            </div>
+
+            <!-- Horizontal scrolling on mobile, grid on desktop -->
+            <div class="flex overflow-x-auto pb-8 snap-x hide-scroll-bar lg:grid lg:grid-cols-3 gap-6 lg:overflow-visible lg:pb-0">
+                
+                <!-- Review 1 -->
+                <div class="snap-center shrink-0 w-80 lg:w-auto bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-yellow mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">"Great service! Fixed my UPS wiring issue in SOAN GARDEN quickly."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">M</div>
+                        <div>
+                            <p class="font-bold text-brand-navy">MUMTAZ</p>
+                            <p class="text-xs text-slate-500">Soan Garden, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="snap-center shrink-0 w-80 lg:w-auto bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-yellow mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">"Best service! Short Circuit Problem Maintenance In Emergency time Of Late Night in PWD."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">L</div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Laraib</p>
+                            <p class="text-xs text-slate-500">PWD, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="snap-center shrink-0 w-80 lg:w-auto bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-brand-yellow mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">"Phase Failure Emergency Repair Of My House in Jinnah Garden."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">F</div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Farhan Ahmad</p>
+                            <p class="text-xs text-slate-500">Jinnah Garden, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="snap-center shrink-0 w-80 lg:w-auto bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between lg:col-start-1 lg:col-span-1 lg:translate-x-1/2">
+                    <div>
+                        <div class="flex text-brand-yellow mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">"Quickly Fan Repair And Another Fan Installation in CBR Town Block C."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">D</div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Danish Ansari</p>
+                            <p class="text-xs text-slate-500">CBR Town, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="snap-center shrink-0 w-80 lg:w-auto bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between lg:col-start-2 lg:col-span-1 lg:translate-x-1/2">
+                    <div>
+                        <div class="flex text-brand-yellow mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">"Highly professional Person. Did the complete electrical work for my new house in Korang Town."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">M</div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Muhammad Shoaib</p>
+                            <p class="text-xs text-slate-500">Korang Town, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Custom CSS to hide scrollbar for horizontal scroll -->
+            <style>
+                .hide-scroll-bar {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+                .hide-scroll-bar::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- 8. Contact & Lead Generation -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                
+                <!-- Contact Info Panel -->
+                <div class="lg:w-2/5 p-10 md:p-12 text-white relative overflow-hidden bg-brand-navy">
+                    <!-- Background Accent -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue rounded-full blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
+                    
+                    <h3 class="text-3xl font-extrabold mb-8 relative z-10">Get In Touch</h3>
+                    <p class="text-slate-300 mb-10 relative z-10">Need an electrician right away? Call us directly or send a WhatsApp message for the fastest response.</p>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <a href="tel:03034717372" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Phone</p>
+                                <p class="font-bold text-lg">0303-4717372</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/923034717372" target="_blank" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">WhatsApp</p>
+                                <p class="font-bold text-lg">0303-4717372</p>
+                            </div>
+                        </a>
+                        <a href="mailto:rehanjamber@gmail.com" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Email</p>
+                                <p class="font-bold text-lg">rehanjamber@gmail.com</p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Location</p>
+                                <p class="font-bold text-lg">Soan Garden, Islamabad</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-brand-yellow group-hover:text-brand-navy transition-colors">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Working Hours</p>
+                                <p class="font-bold text-lg">Mon-Sun: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:w-3/5 p-10 md:p-12 bg-white">
+                    <h3 class="text-2xl font-bold text-brand-navy mb-6">Request a Free Estimate</h3>
+                    <form action="https://formspree.io/f/xaqpbyrv" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
+                                <input type="text" id="name" name="Full Name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-transparent outline-none transition-all" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="Phone Number" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-transparent outline-none transition-all" placeholder="03xx-xxxxxxx">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="sector" class="block text-sm font-medium text-slate-700 mb-2">Sector / Area (Islamabad/Rawalpindi)</label>
+                            <input type="text" id="sector" name="Sector or Area" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-transparent outline-none transition-all" placeholder="e.g. DHA Phase 2, F-10, Soan Garden">
+                        </div>
+                        <div>
+                            <label for="issue" class="block text-sm font-medium text-slate-700 mb-2">Describe your electrical issue</label>
+                            <textarea id="issue" name="Issue Description" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-transparent outline-none transition-all resize-none" placeholder="Please describe what you need help with..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-navy hover:bg-brand-blue text-white font-bold text-lg py-4 rounded-lg transition-colors shadow-lg shadow-brand-blue/30 flex justify-center items-center gap-2">
+                            <span>Get Free Estimate</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="bg-slate-950 pt-16 pb-8 border-t-4 border-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+                
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-bolt text-brand-yellow text-2xl"></i>
+                        <span class="font-bold text-2xl text-white">AH Electrical Repairing Centre</span>
+                    </div>
+                    <p class="text-slate-400 text-sm text-center md:text-left max-w-sm">
+                        Powering Islamabad securely. Reliable, fast, and affordable electrical solutions available 24 hours a day, 7 days a week.
+                    </p>
+                </div>
+
+                <div class="flex gap-4">
+                   
+                    </a>
+                    <a href="https://wa.me/923034717372" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center hover:bg-green-500 transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 AH Electrical Repairing. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4 text-xs">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
